@@ -9,7 +9,7 @@ class PantallaInicial_0373 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Card Container Lozano 0373"),
-        backgroundColor: Colors.green,
+        backgroundColor: Color(0xff00394b),
       ),
       body: Center(
         child: Column(
@@ -19,13 +19,31 @@ class PantallaInicial_0373 extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(context, "/pantalla1_0373");
               },
-              child: Text("Mover a Pantalla1"),
+              child: Text("Mover a Pantalla1", style: TextStyle(fontSize: 18)),
+              style: ElevatedButton.styleFrom(
+                primary: Color(0xff007195),
+                padding: EdgeInsets.all(20),
+              ),
             ),
             ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, "/pantalla2_0373");
               },
-              child: Text("Mover a Pantalla2"),
+              child: Text("Mover a Pantalla2", style: TextStyle(fontSize: 18)),
+              style: ElevatedButton.styleFrom(
+                primary: Color(0xff003689),
+                padding: EdgeInsets.all(20),
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, "/pantalla3_0373");
+              },
+              child: Text("Mover a Pantalla3", style: TextStyle(fontSize: 18)),
+              style: ElevatedButton.styleFrom(
+                primary: Color(0xff000f95),
+                padding: EdgeInsets.all(20),
+              ),
             ),
           ],
         ),

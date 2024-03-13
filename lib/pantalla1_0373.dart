@@ -9,20 +9,19 @@ class Pantalla1_0373 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Card P1 Lozano 0373"),
-        backgroundColor: Colors.green,
+        backgroundColor: Color(0xff00394b),
       ),
       body: Center(
-        child: Card(
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-          elevation: 30,
-          color: Color(0xff003b03),
-          child: Padding(
-            padding: EdgeInsets.all(20),
-            child: Text(
-              "Card Lozano 0373",
-              style: TextStyle(fontSize: 30, color: Color(0xffffffff)),
-            ),
+        child: Container(
+          color: Color(0xff007195),
+          width: 300,
+          height: 300,
+          padding: EdgeInsets.all(32),
+          margin: EdgeInsets.symmetric(vertical: 16, horizontal: 32),
+          alignment: Alignment.center,
+          child: Text(
+            'Lozano 0373',
+            style: TextStyle(fontSize: 30, color: Colors.white),
           ),
         ),
       ),

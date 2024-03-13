@@ -9,27 +9,22 @@ class Pantalla2_0373 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Card P2 Lozano 0373"),
-        backgroundColor: Colors.black,
+        backgroundColor: Color(0xff00394b),
       ),
       body: Center(
         child: Container(
-          color: Color(0xff009307),
-          width: double.infinity,
-          height: double.infinity,
-          child: Card(
-            shape:
-                RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-            elevation: 20,
-            color: Color(0xff003b03),
-            margin: EdgeInsets.all(30),
-            child: Padding(
-              padding: EdgeInsets.all(20),
-              child: Text(
-                'Container Card',
-                style: TextStyle(fontSize: 30, color: Color(0xffffffff)),
-                textAlign: TextAlign.center,
-              ),
-            ),
+          alignment: Alignment.center,
+          color: Color(0xff007195),
+          constraints: BoxConstraints(
+            minHeight: 100,
+            minWidth: 200,
+            maxHeight: 200,
+            maxWidth: 300,
+          ),
+          child: Text(
+            'Lozano 0373',
+            style: TextStyle(fontSize: 30, color: Colors.white),
+            textAlign: TextAlign.center,
           ),
         ),
       ),
